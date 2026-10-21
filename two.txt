@@ -1,0 +1,4 @@
+[
+    {"name": "Microsoft", "profit": 600000, "employees": 120},
+    {"name": "Amazon", "profit": 450000, "employees": 150}
+]
