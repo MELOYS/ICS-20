@@ -1,0 +1,30 @@
+
+def prosti(n):
+    k = 0
+    for i in range(2, n + 1):
+        if n % i == 0:
+            p = True
+            for j in range(2, i):
+                if i % j == 0:
+                    p = False
+                    break
+            if p:
+                k += 1
+    return k
+
+def dilniki(n):
+    k = 0
+    for i in range(1, n + 1):
+        if n % i == 0:
+            k += 1
+    return k
+
+import mymodule
+
+n = int(input("Введіть натуральне число: "))
+
+if n > 0:
+    print("Кількість простих дільників =", mymodule.prosti(n))
+    print("Кількість усіх дільників =", mymodule.dilniki(n))
+else:
+    print("Введіть натуральне число більше нуля")

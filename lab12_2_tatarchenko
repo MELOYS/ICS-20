@@ -1,0 +1,26 @@
+
+import random
+
+def karta(koloda):
+    k = random.choice(koloda)
+    koloda.remove(k)
+    return k
+
+masti = ['♠', '♥', '♦', '♣']
+znach = ['6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']
+
+koloda = []
+for m in masti:
+    for z in znach:
+        koloda.append(z + m)
+
+N = int(input("Введіть кількість гравців: "))
+
+if N < 1 or N > 6:
+    print("Кількість гравців має бути від 1 до 6")
+else:
+    for i in range(N):
+        print("Гравець", i + 1, end=": ")
+        for j in range(6):
+            print(karta(koloda), end=" ")
+        print()

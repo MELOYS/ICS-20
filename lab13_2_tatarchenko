@@ -1,0 +1,31 @@
+
+import car
+from datetime import date
+
+cars = [
+    car.CAR("AA1234AA", "Camry", "Toyota", 2010, "Іван"),
+    car.CAR("BB5678BB", "Golf", "Volkswagen", 2018, "Олег"),
+    car.CAR("CC9012CC", "Focus", "Ford", 2012, "Анна"),
+    car.CAR("DD3456DD", "Civic", "Honda", 2020, "Петро"),
+    car.CAR("EE7890EE", "A6", "Audi", 2008, "Марія")
+]
+
+print("Усі автомобілі:")
+for c in cars:
+    c.DisplayProp()
+
+cars[0].ChangeNumber("AA9999AA")
+cars[0].ChangeOwner("Андрій")
+
+cars.sort(key=lambda c: c.GetYear())
+
+print("\nАвтомобілі за роком випуску:")
+for c in cars:
+    c.DisplayProp()
+
+print("\nАвтомобілі старші 10 років:")
+current_year = date.today().year
+
+for c in cars:
+    if current_year - c.GetYear() > 10:
+        c.DisplayProp()

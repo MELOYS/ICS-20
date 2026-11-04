@@ -1,0 +1,37 @@
+
+class PUPIL:
+    def __init__(self, surname, name, year, school_class):
+        self.surname = surname
+        self.name = name
+        self.year = year
+        self.school_class = school_class
+
+    def change_class(self, new_class):
+        self.school_class = new_class
+
+    def show(self):
+        print(self.surname, self.name,
+              self.year, self.school_class)
+
+
+pupils = []
+
+pupils.append(PUPIL("Іваненко", "Іван", 2010, "10-А"))
+pupils.append(PUPIL("Петренко", "Олена", 2011, "9-Б"))
+pupils.append(PUPIL("Сидоренко", "Андрій", 2010, "10-Б"))
+
+print("Список учнів:")
+for pupil in pupils:
+    pupil.show()
+
+pupils[0].change_class("11-А")
+
+print("\nПісля зміни класу:")
+for pupil in pupils:
+    pupil.show()
+
+pupils.pop(1)
+
+print("\nПісля видалення учня:")
+for pupil in pupils:
+    pupil.show()

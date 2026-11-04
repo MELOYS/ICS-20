@@ -1,0 +1,14 @@
+
+import math
+
+def plosha(a):
+    S = (3 * math.sqrt(3) * a ** 2) / 2
+    print("Площа шестикутника =", S)
+
+def diagonal(a):
+    d = 2 * a
+    print("Довжина діагоналі =", d)
+
+a = float(input("Введіть сторону шестикутника: "))
+plosha(a)
+diagonal(a)
