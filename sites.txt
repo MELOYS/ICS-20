@@ -1,0 +1,4 @@
+
+https://www.python.org
+https://www.djangoproject.com
+https://www.w3.org/Consortium/contact

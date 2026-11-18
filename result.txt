@@ -1,0 +1,18 @@
+Сайт: https://www.python.org
+E-mail не знайдено
+
+Сайт: https://www.djangoproject.com
+E-mail не знайдено
+
+Сайт: https://www.w3.org/Consortium/contact
+contact@w3.org
+giving@w3.org
+invoicing@w3.org
+membership@w3.org
+site-comments@w3.org
+sysreq@w3.org
+team-china-contact@w3.org
+team-liaisons@w3.org
+team-wcap-contact@w3.org
+w3t-pr@w3.org
+
